@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Message</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url('https://via.placeholder.com/1920x1080?text=Your+Background+Image') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            animation: gradientShift 10s infinite alternate;
+        }
+        @keyframes gradientShift {
+            0% {
+                background: url('https://via.placeholder.com/1920x1080?text=Your+Background+Image') no-repeat center center fixed;
+                background-size: cover;
+            }
+            100% {
+                background: url('https://via.placeholder.com/1920x1080?text=Another+Background+Image') no-repeat center center fixed;
+                background-size: cover;
+            }
+        }
+        .message-container {
+            background: linear-gradient(145deg, rgba(255, 250, 205, 0.8), rgba(240, 230, 140, 0.8));
+            border: 3px solid #ff69b4;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            margin: 20px;
+            animation: bounceIn 2s;
+        }
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        .message-container h1 {
+            color: #ff6347;
+            font-size: 2.5em;
+            margin: 0;
+            animation: colorChange 5s infinite alternate;
+        }
+        @keyframes colorChange {
+            0% {
+                color: #ff6347;
+            }
+            50% {
+                color: #32cd32;
+            }
+            100% {
+                color: #1e90ff;
+            }
+        }
+        .message-container p {
+            color: #ff1493;
+            font-size: 1.5em;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-container">
+        <h1>I Love You, Noreen</h1>
+        <p>I miss youuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu baby '- James</p>
+    </div>
+</body>
+</html>
